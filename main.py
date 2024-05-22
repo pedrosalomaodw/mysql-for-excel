@@ -2,9 +2,9 @@ import pandas as pd
 import mysql.connector as mysql
 
 
-mensagem_select = "SELECT * FROM dadosphp.users;"
+mensagem_select = "SELECT * FROM namedatabase.users;"
 
-conexao_mysql = mysql.connect(host="localhost", user="root", database="dadosphp", port=3306)
+conexao_mysql = mysql.connect(host="localhost", user="root", database="", port=3306)
 
 cursor = conexao_mysql.cursor()
 cursor.execute(mensagem_select)
